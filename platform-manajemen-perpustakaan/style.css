@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+html {
+    zoom: 90%;
+}
+
+input:focus {
+    outline: #E8DFCA solid 3px;
+}
+
+.container {
+    max-width: 1280px;
+    margin: auto;
+}
+
+/* Navbar */
+.navbar {
+    height: max-content;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    padding: 6px 12px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: #4F6F52;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+
+.nav-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title {
+    font-size: 2.5rem;
+    color: #222831;
+}
+
+/* Navbar End */
+
+.main-content {
+    padding-top: 55px;
+}
+
+.input-section {
+    background-color: #1A4D2E;
+    padding: 100px 15px 150px;
+}
+
+.input-form {
+    width: 40%;
+    margin: auto;
+    background-color: #ffffff;
+    padding: 22px 30px 26px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    border-radius: 0.75rem;
+}
+
+.input-form h2 {
+    font-weight: 450;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input-form input {
+    color: #2A2929;
+}
+
+.input-form input:focus {
+    box-shadow: none;
+}
+
+.input-data {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 15px;
+    align-items: center;
+}
+
+.input-form input,
+.input-form button {
+    flex-grow: 1;
+    margin: 4px;
+    padding: 15px 55px;
+    border-radius: 0.375rem;
+    border: none;
+    box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+}
+
+.input-form button {
+    margin-top: 14px;
+    width: auto;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 0.375rem;
+    background-color: #A9B388;
+    color: #31363F;
+    cursor: pointer;
+    transition: all 0.15s;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.input-form button:hover {
+    background-color: #A9B388;
+}
+
+.input-form button:active {
+    background-color: #B99470;
+    color: white;
+}
+
+/* Bookshelf Section */
+.bookshelf {
+    padding: 30px 12px;
+    background-color: #ffffff;
+}
+
+.bookshelf h2 {
+    font-weight: 450;
+    color: #2A2929;
+    margin-bottom: 20px;
+}
+
+.book-item {
+    background-color: #9FBB73;
+    padding: 20px;
+    border-radius: 0.75rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 8px;
+    margin-bottom: 15px;
+}
+
+.book-item h3 {
+    font-size: 1.5rem;
+    color: #2A2929;
+    margin-bottom: 10px;
+}
+
+.book-item p {
+    margin-bottom: 8px;
+    color: #2A2929;
+}
+
+.book-button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 0.375rem;
+    background-color: #A9B388;
+    color: #31363F;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.book-button:hover {
+    background-color: #B99470;
+}
+
+.notification {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #1A4D2E;
+    color: white;
+    padding: 15px;
+    border-radius: 0.375rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 8px;
+}
+
+.notification-card {
+    margin-bottom: 10px;
+}

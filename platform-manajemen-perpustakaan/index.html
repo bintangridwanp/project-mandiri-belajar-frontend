@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Library app</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<nav class="navbar">
+    <div class="container nav-flex">
+        <h1 class="title">Personal Library app</h1>
+    </div>
+</nav>
+<main class="main-content">
+    <article class="input-section" id="input-section">
+        <section class="container">
+            <form action="" class="input-form" id="input-form">
+                <h2>Masukkan buku baru</h2>
+                <div class="input-data">
+                    <input type="text" class="input-title" id="input-title" placeholder="Judul Buku" required>
+                    <input type="text" class="input-author" id="input-author" placeholder="Penulis Buku" required>
+                    <input type="number" class="input-year" id="input-year" placeholder="Tahun Terbit" required>
+                    <input type="checkbox" id="isComplete">
+                    <label for="isComplete">Selesai Dibaca</label>
+                </div>
+                <button type="submit">
+                    Tambahkan ke
+                    <span id="submit-text">Daftar Buku Belum Dibaca</span>
+                </button>
+            </form>
+        </section>
+    </article>
+    <article class="bookshelf container" id="bookshelf">
+        <section class="uncompleted-book bookshelf-list" id="uncompleted-book">
+            <h2>Belum selesai dibaca</h2>
+            <div class="book-list" id="uncompleted-booklist"></div>
+        </section>
+        <section class="completed-book bookshelf-list" id="completed-book">
+            <h2>Sudah selesai dibaca</h2>
+            <div class="book-list" id="completed-booklist"></div>
+        </section>
+    </article>
+    <div class="notification" id="notification"></div>
+</main>
+<script src="./script.js"></script>
+</body>
+
+</html>

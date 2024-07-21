@@ -1,0 +1,188 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.navbar {
+    background-color: #DBA979;
+    color: white;
+    padding: 15px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title {
+    font-size: 1.5rem;
+    margin-left: 50px;
+}
+
+.navbar a {
+    color: black;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar a:hover {
+    background-color: #555;
+}
+
+.pencarian-container {
+    width: 20%;
+    margin-right: 20px;
+}
+
+.pencarian {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+}
+
+
+.main-content {
+    padding: 100px 20px 20px;
+}
+
+.input-section {
+    margin: 20px 0;
+}
+
+.input-section .container {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.input-form h2 {
+    margin-bottom: 20px;
+}
+
+.input-data {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.input-data input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.input-data button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #DBA979;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.input-data button:hover {
+    background-color: #c38c6e;
+}
+
+.daftar-hutang {
+    margin: 20px 0;
+}
+
+.daftar-hutang-list {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.daftar-hutang h2 {
+    margin-bottom: 20px;
+}
+
+.daftar-hutang div {
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Button styles */
+.loan-item button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    margin-left: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.loan-item .delete-button {
+    background-color: red;
+    color: white;
+}
+
+.loan-item .delete-button:hover {
+    background-color: darkred;
+}
+
+.loan-item .mark-paid-button {
+    background-color: green;
+    color: white;
+}
+
+.loan-item .mark-paid-button:hover {
+    background-color: darkgreen;
+}
+
+.loan-item .mark-unpaid-button {
+    background-color: orange;
+    color: white;
+}
+
+.loan-item .mark-unpaid-button:hover {
+    background-color: darkorange;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+        margin: auto;
+    }
+
+    .pencarian-container {
+        width: 60%;
+    }
+
+    .navbar .menu-toggle {
+        display: block;
+    }
+
+    .navbar .menu-items {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        z-index: 999;
+        text-align: center
+    }
+}
+
+

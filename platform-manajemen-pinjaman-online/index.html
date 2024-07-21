@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manajemen Pinjaman Online</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="container nav-flex">
+        <h1 class="title">Butuh Uang Cepat</h1>
+        <div class="pencarian-container">
+            <input type="text" class="pencarian" id="pencarian" placeholder="Cari Pengguna">
+        </div>
+    </div>
+</nav>
+
+<main class="main-content">
+    <article class="input-section" id="input-section">
+        <section class="container">
+            <form class="input-form" id="input-form">
+                <h2>Masukan Data Anda </h2>
+                <div class="input-data">
+                    <input type="text" class="input-title" id="input-title" placeholder="Nama Peminjam" required>
+                    <input type="number" id="input-sum" min="0" step="50" placeholder="Masukkan Jumlah Uang" required>
+                    <button type="submit">Ajukan Pinjaman Uang</button>
+                </div>
+            </form>
+        </section>
+    </article>
+
+    <article class="daftar-hutang container" id="daftar-hutang">
+        <section class="belum-dibayar daftar-hutang-list" id="belum-dibayar">
+            <h2>Hutang Belum di Bayar</h2>
+            <div class="daftar-hutang" id="daftar-belum-dibayar">
+                <!-- Item hutang belum dibayar akan dimasukkan di sini -->
+            </div>
+        </section>
+
+        <section class="sudah-dibayar daftar-hutang" id="sudah-dibayar">
+            <h2>Hutang Sudah di Bayar</h2>
+            <div class="daftar-hutang" id="daftar-sudah-dibayar">
+                <!-- Item hutang sudah dibayar akan dimasukkan di sini -->
+            </div>
+        </section>
+    </article>
+
+</main>
+<script src="script.js"></script>
+</body>
+</html>
